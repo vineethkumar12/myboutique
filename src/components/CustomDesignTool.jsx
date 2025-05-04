@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 const token = import.meta.env.VITE_HUGGING_FACE_API;
-
+console.log(token);
 const CustomDesignTool = () => {
   const [design, setDesign] = useState(null);
   const [prompt, setPrompt] = useState("");
