@@ -1,0 +1,10 @@
+@media screen and (max-width: 768px) {
+  .mobile-menu {
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(-100%);
+  }
+
+  .mobile-menu.open {
+    transform: translateY(0);
+  }
+}

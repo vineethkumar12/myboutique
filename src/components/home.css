@@ -1,0 +1,92 @@
+.App {
+  text-align: center;
+}
+
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
+}
+
+/* Hero Section */
+.hero {
+  background: url("https://via.placeholder.com/1500x800") no-repeat center
+    center/cover; /* Replace with your image */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.cta-button {
+  background: #b8860b; /* Gold color */
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #daa520; /* Lighter gold */
+}
+
+/* Introduction Section */
+.introduction {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 4rem 2rem;
+  background: #f9f9f9;
+}
+
+.intro-text {
+  max-width: 500px;
+  text-align: left;
+}
+
+.intro-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.intro-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+  background: #333;
+  color: white;
+  padding: 2rem;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.social-media a {
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-media a:hover {
+  color: #b8860b; /* Gold color */
+}
