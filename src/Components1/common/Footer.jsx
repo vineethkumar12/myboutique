@@ -134,7 +134,7 @@ export default function Footer() {
               <div className="flex items-start">
                 <FiMapPin className="flex-shrink-0 mt-1 mr-3 text-orange-500" />
                 <span className="text-gray-400">
-                  123 Tailor Street, Fashion District
+                  sapthagiri colony, Hanamakonda District
                 </span>
               </div>
               <div className="flex items-center">
@@ -143,7 +143,7 @@ export default function Footer() {
                   href="mailto:hello@tailorpro.com"
                   className="text-gray-400 hover:text-orange-500 transition-colors duration-300"
                 >
-                  hello@tailorpro.com
+                  adepuprabhakar@gmail.com
                 </a>
               </div>
               <div className="flex items-center">
@@ -152,7 +152,7 @@ export default function Footer() {
                   href="tel:+919876543210"
                   className="text-gray-400 hover:text-orange-500 transition-colors duration-300"
                 >
-                  +91 98765 43210
+                  +91 9704455879
                 </a>
               </div>
             </address>
