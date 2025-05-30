@@ -1,16 +1,17 @@
-import React from "react";
-import { Link } from "react-scroll";
+import { useEffect } from "react";
+import { Link } from "react-router-dom"; // For navigation
 import { FaMapMarkerAlt } from "react-icons/fa"; // Importing the map marker icon
 import { motion } from "framer-motion"; // For animations
 import men from "../assets/men.webp";
-import { useEffect } from "react";
+
 function About() {
   const googleMapLink =
     "https://www.google.com/maps/place/18%C2%B000'17.9%22N+79%C2%B031'36.1%22E/@18.004973,79.5241201,17z/data=!3m1!4b1!4m4!3m3!8m2!3d18.004973!4d79.526695?authuser=0&entry=ttu&g_ep=EgoyMDI1MDIyNi4xIKXMDSoASAFQAw%3D%3D"; // Replace with actual location link
-  // Scroll to top on component mount
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <div className="py-8 md:py-16 bg-gray-50" id="about">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -72,7 +73,7 @@ function About() {
             {/* Google Maps Link */}
             <div className="flex justify-center md:justify-start items-center gap-4 mt-4">
               <Link
-                to="contact"
+                to="/contact"
                 smooth={true}
                 duration={500}
                 className="px-6 py-3 cursor-pointer bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition duration-300 hover-effect"

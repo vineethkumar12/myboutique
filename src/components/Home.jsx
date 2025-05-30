@@ -117,28 +117,7 @@ function Home() {
       </section>
 
       {/* Custom Design Tool Section */}
-      <section className=" py-8 bg-orange-500 text-white">
-        <div className="container mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Design Your Dream Blouse – Powered by AI!
-          </h2>
-          <p className="text-lg  mb-8">
-            Create a unique blouse tailored to your style with our AI-powered
-            Custom Design Tool. Describe your design, and let our AI bring it to
-            life. Click “Start Designing” to begin!
-          </p>
-
-          {/* Button to Navigate to Custom Design Tool */}
-          <Link
-            to="/myboutique/custom-design-tool"
-            className={` animated-bg
-            } text-white px-6 py-3 cursor-pointer rounded-lg hover:bg-blue-700 transition-transform transform hover:scale-105 inline-block`}
-          >
-            Start Designing
-          </Link>
-        </div>
-      </section>
-
+      
       {/* Fixed WhatsApp Icon */}
       <a
         href="https://wa.me/9704455879?text=Hello%20Prabhakar%20Tailors."

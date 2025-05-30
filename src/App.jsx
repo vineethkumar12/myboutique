@@ -1,53 +1,39 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
-import About from "./components/About";
-import Services from "./components/Services";
-import Gallery from "./components/Gallery";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import CustomCursor from "./components/CustomCursor";
-import CustomDesignTool from "./components/CustomDesignTool";
-import Moreservices from "./components/Moreservices";
-import MeasurementGuidePage from "./components/MeasurementGuidePage";
-
-// Layout Component to encapsulate common structure
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import OrderPage from "./pages/OrderPage";
+import ServicesPage from "./pages/Servicespage";
+import MeasurementGuide from "./pages/MeasurementGuide";
+import GalleryPage from "./pages/GalleryPage";
+import TailorDashboard from "./pages/TailorDashboard";
+import VirtualTryOnPage from "./pages/VirtualTryOnPage";
+import Preview3DPage from "./pages/Preview3DPage";
+import AdminPanel from "./pages/AdminPanel";
+import Layout from "./Components1/common/Layout";
+import Contact from "./pages/Contact";
+import CustomDesignTool from "./pages/CustomDesignTool";
+import About from "./pages/About";
 
 function App() {
   return (
-    <div className="App">
-      <Routes>
-        {/* Route for the main page with Layout */}
-        <Route
-          path="/myboutique"
-          element={
-            <>
-              <Home />
-              <About />
-              <Services />
-              <Gallery />
-              <Contact />
-              <Footer />
-            </>
-          }
-        />
-
-        {/* Route for More Services */}
-        <Route path="/myboutique/Moreservices" element={<Moreservices />} />
-
-        {/* Route for Measurement Guide */}
-        <Route
-          path="/myboutique/measurement-guide"
-          element={<MeasurementGuidePage />}
-        />
-
-        {/* Route for Custom Design Tool */}
-        <Route
-          path="/myboutique/custom-design-tool"
-          element={<CustomDesignTool />}
-        />
-      </Routes>
-    </div>
+    <BrowserRouter>
+      <Layout>
+        <Routes>
+          <Route path="/myboutique/" element={<HomePage />} />
+          <Route path="/order" element={<OrderPage />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/measurements" element={<MeasurementGuide />} />
+          <Route path="/ai-designer" element={<CustomDesignTool />} />
+          <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/tailor-dashboard" element={<TailorDashboard />} />
+          <Route path="/virtual-tryon" element={<VirtualTryOnPage />} />
+          <Route path="/3d-preview" element={<Preview3DPage />} />
+          <Route path="/admin" element={<AdminPanel />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Layout>
+    </BrowserRouter>
   );
 }
 
